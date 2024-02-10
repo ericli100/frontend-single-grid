@@ -4,8 +4,8 @@
   "description": "3-column-component challenge",
   "main": "tailwind.config.js",
   "scripts": {
-    "start_http": "concurrently --kill-others \"tailwindcss -i ./src/input.css -o ./dist/output.css --watch\" \"http-server src\"",
-    "start": "tailwindcss -i ./src/input.css -o ./dist/output.css --watch",
+    "start": "concurrently --kill-others \"tailwindcss -i ./src/input.css -o ./src/dist/output.css --watch\" \"live-server src\"",
+    "tailwind": "tailwindcss -i ./src/input.css -o ./src/dist/output.css --watch",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
@@ -14,5 +14,9 @@
     "prettier": "^3.1.0",
     "prettier-plugin-tailwindcss": "^0.5.7",
     "tailwindcss": "^3.3.6"
+  },
+  "dependencies": {
+    "concurrently": "^8.2.2",
+    "live-server": "^1.2.2"
   }
 }

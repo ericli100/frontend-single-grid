@@ -16,3 +16,6 @@
 .prettierignore
 
 node_modules/
+
+src/dist
+

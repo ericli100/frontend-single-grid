@@ -26,6 +26,12 @@
       href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;700"
       rel="stylesheet"
     />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Karla:wght@400;700"
+      rel="stylesheet"
+    />
+
     <link href="../dist/output.css" rel="stylesheet" />
 
     <title>Frontend Mentor | 3-column preview card component</title>
@@ -40,32 +46,38 @@
         color: hsl(228, 45%, 44%);
       }
     </style>
-    <!-- <style>
-      body {
-        font-family: "Big Shoulders Display";
-        font-size: 22px;
-      }
-    </style> -->
   </head>
   <body>
     <div
-      class="m-auto flex h-[856px] w-[375px] flex-col justify-center bg-blue-200 align-middle md:h-[1440px] md:w-[800px]"
+      class="m-auto flex h-[856px] w-[375px] flex-col justify-center bg-blue-100 align-middle font-[Karla] md:h-[1440px] md:w-[800px]"
     >
-      <main class="m-2 flex-1 bg-blue-500">
-        <button class="block bg-green-400">green big button</button>
-        Join our community 30-day, hassle-free money back guarantee Gain access
-        to our full library of tutorials along with expert code reviews. Perfect
-        for any developers who are serious about honing their skills.
-      </main>
-      <section class="m-2 flex-1">
-        <div>
-          Monthly Subscription &dollar;29 per month Full access for less than
-          &dollar;1 a day Sign Up
+      <main class="mx-8 mt-[72px] basis-[267px] bg-white px-6">
+        <div class="mb-6 mt-7 text-xl font-bold text-[#2AB3B1]">
+          Join our community:
         </div>
-        <div>
-          Why Us Tutorials by industry experts Peer &amp; expert code review
-          Coding exercises Access to our GitHub repos Community forum Flashcard
-          decks New videos every week
+        <div class="text-sm font-bold text-[#C0DF33]">
+          30-day, hassle-free money back guarantee
+        </div>
+        <div class="mt-4 text-sm text-[#9AA7BE]">
+          lala Gain access to our full library of tutorials along with expert
+          code reviews. Perfect for any developers who are serious about honing
+          their skills.
+        </div>
+      </main>
+      <section
+        class="bg-green-20 mx-8 mb-[62px] flex basis-[454px] flex-col text-white"
+      >
+        <div class="flex-1 bg-[#2cb3b1] px-6">
+          <div class="mt-[18px]">Monthly Subscription</div>
+          <div><span class="mt-4 text-[32px]">$29</span> per month</div>
+          <div>Full access for less than &dollar;1 a day</div>
+          <button class="bg-[C0DF33]">Sign Up</button>
+        </div>
+        <div class="flex-1 bg-[#4abfbd] px-6">
+          <div>Why Us</div>
+          Tutorials by industry experts Peer &amp; expert code review Coding
+          exercises Access to our GitHub repos Community forum Flashcard decks
+          New videos every week
         </div>
       </section>
     </div>
